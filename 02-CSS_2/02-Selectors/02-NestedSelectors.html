@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* a {
+            color: red;
+        } */
+        
+        #header a {
+            text-decoration: none;
+        }
+        
+        #header .logo .company {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nested Selectors</h1>
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="logo">
+                        <!-- <h1>
+                            <a href="#" class="company">Company</a>
+                            <a href="#" class="logo">Logo</a>
+                        </h1> -->
+
+                        <h1>
+                            <a href="#">
+                                <span class="company">Company</span>
+                                <span class="logo">Logo</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="login">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

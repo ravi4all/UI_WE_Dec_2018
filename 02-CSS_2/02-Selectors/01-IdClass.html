@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: lightcyan;
+        }
+        /* #div_1 {
+            background-color: lightcoral;
+        } */
+        
+        #div_2 {
+            background-color: lightgray;
+        }
+        
+        #div_1,
+        #div_3 {
+            background-color: lightgreen;
+        }
+        
+        .class_3 {
+            padding: 5px;
+            background-color: darkcyan;
+        }
+        
+        .class_1 {
+            padding: 20px;
+        }
+        
+        .class_4 {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Id Class Selector</h1>
+
+    <!-- 
+    Id - Unique identity (#)
+    - one id cannot be repeated on a particular page
+    - an element can have only one id
+    Class - Grouping of elements (.)
+    - classes can repeated any number of times on a single page
+    - an element can have any number of classes
+    -->
+
+    <!-- div#div_$*4>h2{This is a heading inside div_$} -->
+    <div id="div_1" class="class_1">
+        <h2>This is a heading inside div_1</h2>
+    </div>
+    <div id="div_2" class="class_1 class_2">
+        <h2>This is a heading inside div_2</h2>
+    </div>
+    <div id="div_3" class="class_2 class_3">
+        <h2>This is a heading inside div_3</h2>
+    </div>
+    <div id="div_4" class="class_4 class_3 class_1">
+        <h2>This is a heading inside div_4</h2>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+body {
+    /* width: 50%; */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#header {
+    background-color: lightblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+}
+
+img {
+    width: 100%;
+}
+
+#chatWindow {
+    position: fixed;
+    width: 21%;
+    bottom: 0px;
+    right: 20px;
+    padding: 10px;
+    background-color: lightsalmon;
+}
+
+#content {
+    margin-top: 110px;
+}
+
+#sidebar_1 {
+    width: 20%;
+    position: fixed;
+    background-color: lightgray;
+}
+
+#main {
+    width: 50%;
+    /* margin: 0px 20px; */
+    margin-left: 22%;
+    background-color: lightgray;
+}
+
+#main .post {
+    position: relative;
+    padding: 10px;
+}
+
+#main .author {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+#main .author p {
+    margin: 0px;
+}
+
+#sidebar_2 {
+    width: 23%;
+    position: fixed;
+    right: 20px;
+}
+
+#sidebar_2 .links {
+    background-color: lightgray;
+}

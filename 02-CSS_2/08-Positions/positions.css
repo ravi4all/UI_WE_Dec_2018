@@ -72,10 +72,15 @@ img {
 
 #sidebar_2 {
     width: 23%;
-    position: fixed;
+    /* position: fixed; */
     right: 20px;
 }
 
 #sidebar_2 .links {
     background-color: lightgray;
+}
+
+#sidebar_2 .links_1 {
+    position: sticky;
+    top: 120px;
 }

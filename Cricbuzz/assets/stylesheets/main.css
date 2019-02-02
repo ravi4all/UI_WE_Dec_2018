@@ -43,6 +43,10 @@ h6 {
     display: block;
 }
 
+.w-100 {
+    width: 100%;
+}
+
 
 /* Common Settings */
 
@@ -109,20 +113,179 @@ h6 {
     top: 22px;
 }
 
+.tabs {
+    background-color: #fff;
+}
+
+.tabs ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    padding-top: 10px;
+}
+
+.tabs ul li.active a {
+    color: #009270;
+    font-weight: bold;
+    border-bottom: 2px solid #009270;
+}
+
+.tabs ul li a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    padding-bottom: 5px;
+}
+
+.tabs .allMatches {
+    padding: 10px;
+}
+
 
 /***** Content *****/
 
-#content {}
+#content {
+    margin-top: 6px;
+}
 
 
 /***** Main *****/
 
-#main {}
+#main {
+    background-color: #fff;
+    margin: 0px 6px;
+    width: 44%;
+    padding: 10px 13px;
+}
+
+#section_1 h3 {
+    color: #666;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#section_1 h1 {
+    font-size: 24px;
+}
+
+#section_1 h1 a {
+    color: #000;
+}
+
+#section_1 p {
+    color: #666;
+}
+
+#section_1 h1 a:hover {
+    text-decoration: underline;
+}
+
+.scorecard {
+    width: 80%;
+    background-color: #F0F0F0;
+    margin-bottom: 20px;
+}
+
+.scorecard a {
+    display: block;
+    padding: 10px;
+    color: #000;
+}
+
+.scorecard ul li {
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 10px;
+    list-style: circle;
+    position: relative;
+}
+
+.scorecard ul li span {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    border: 1px solid #000;
+    height: 2px;
+    width: 2px;
+    background-color: #000;
+}
+
+#section_1 .scorecard p {
+    color: red;
+    font-size: 13px;
+}
+
+.links ul li {
+    margin-bottom: 12px;
+}
+
+.links a {
+    color: #1866DB;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 
-/***** Sidebar *****/
+/***** Sidebar_1 *****/
 
-#sidebar {}
+#sidebar_1 {
+    width: 20%;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 13px;
+    margin-bottom: 6px;
+}
+
+.widget h2 {
+    color: #009270;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.widget p {
+    font-size: 14px;
+}
+
+.widget a {
+    color: #000;
+}
+
+#sidebar_1 .widget ul li {
+    border-bottom: 1px solid #E3E6E3;
+}
+
+
+/***** Sidebar_2 *****/
+
+#sidebar_2 {
+    width: 32%;
+}
+
+#sidebar_2 h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+#sidebar_2 .image {
+    position: relative;
+}
+
+#sidebar_2 .play-icon {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    font-size: 20px;
+    color: #fff;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
 
 
 /***** Footer *****/

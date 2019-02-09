@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Form Validations</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter name" required value="Ram" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter username</td>
+                <td>
+                    <input type="text" placeholder="Enter 5 digit username" maxlength="5">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter password" required value="1234" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" placeholder="Enter email" autocomplete="off" autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color</td>
+                <td>
+                    <input type="color">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" min="1000" step="100" max="5000" value="2000" onchange="output.value = value">
+                </td>
+                <td>
+                    <output id="output">2000</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Card Number</td>
+                <td>
+                    <input type="text" placeholder="Enter card number" pattern="[a-z]{4}[A-Z]{2}[0-9]{4}[@|#|$|&]{1}" title="4 small case, 2 Upper case, 4 digit, 1 special symbol">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="20" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Comments</td>
+                <td>
+                    <textarea cols="30" placeholder="Enter Message" spellcheck="true" rows="10" style="resize:none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" disabled></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

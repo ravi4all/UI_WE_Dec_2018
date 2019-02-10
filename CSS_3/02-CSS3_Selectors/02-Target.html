@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #login {
+            display: none;
+        }
+        
+        #login:target {
+            display: block;
+        }
+        
+        div:not(#home) {
+            display: none;
+        }
+        /* div {
+            display: none;
+        } */
+        /* #home {
+            
+        } */
+        
+        #product_details:target,
+        #about:target,
+        #home:target {
+            display: block;
+        }
+        
+        #product_details:target~#home,
+        #about:target~#home {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#login">Login Now</a>
+    <a href="#home">Home</a>
+    <a href="#product_details">Product Detail</a>
+    <a href="#about">About</a>
+
+    <div id="login">
+        <a href="#">Close</a>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter Name</td>
+                    <td>
+                        <input type="text" placeholder="Enter name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password" placeholder="Enter password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="product_details">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41Vd4eG1BrL.__AC_SY400_.jpg" alt="">
+        <h2>Lifelong Power Pro 500-Watt Mixer Grinder with 3 Jars (White/Grey)</h2>
+        <p>
+            Day Delivery — Order in the next 11 hours and 33 minutes Details Sold by Cloudtail India (4.5 out of 5 | 73,845 ratings) and Fulfilled by Amazon. Gift-wrap available.
+        </p>
+    </div>
+
+    <div id="about">
+        <h2>This is Brain Mentors</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea dolorum, dolor fugit maiores aperiam autem dolore corrupti vitae labore consectetur dicta voluptates voluptatibus explicabo expedita eos nostrum sequi magnam! Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Nam, exercitationem perferendis totam officiis quos voluptatem itaque. Nam atque possimus, perspiciatis assumenda quibusdam iure, blanditiis beatae, ut harum minus molestias commodi! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Reiciendis mollitia optio facilis illo earum tempora ad id, temporibus explicabo expedita eligendi cupiditate ullam rem repellat veniam eaque et, consectetur ducimus.
+        </p>
+        <h3>By Ravi</h3>
+    </div>
+
+    <div id="home">
+        <h2>Home Page</h2>
+        <section id="section_1">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/AmazonPay/Recharges/August/1134987_260x260._CB470673279_SY260_.jpg" alt="">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/AmazonPay/Recharges/August/1134987_260x260._CB470673279_SY260_.jpg" alt="">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/AmazonPay/Recharges/August/1134987_260x260._CB470673279_SY260_.jpg" alt="">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/AmazonPay/Recharges/August/1134987_260x260._CB470673279_SY260_.jpg" alt="">
+        </section>
+        <section id="section_2">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Vd4eG1BrL.__AC_SY400_.jpg" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Vd4eG1BrL.__AC_SY400_.jpg" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Vd4eG1BrL.__AC_SY400_.jpg" alt="">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/41Vd4eG1BrL.__AC_SY400_.jpg" alt="">
+        </section>
+    </div>
+
+</body>
+
+</html>

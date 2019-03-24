@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <div onmousemove="show()" onmouseover="show_2(this)" onmouseout="show_3(this)">
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div>
+
+    <script>
+        function show() {
+            console.log("Mouse Move");
+        }
+
+        function show_2(obj) {
+            console.log("Mouse Over");
+            obj.innerHTML = '<img src="../../images/hulk-bigpunch.gif" alt="">';
+        }
+
+        function show_3(obj) {
+            console.log("Mouse Out");
+            obj.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+        }
+    </script>
+
+</body>
+
+</html>

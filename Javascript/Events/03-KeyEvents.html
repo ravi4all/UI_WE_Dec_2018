@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Key Events</h1>
+
+    <input type="text" placeholder="Enter something" onkeypress="show(this)">
+    <input type="text" placeholder="Enter something" onkeydown="show(this)">
+    <input type="text" placeholder="Enter something" onkeyup="show(this)">
+    <hr>
+    <span></span>
+    <script>
+        function show(obj) {
+            var span = document.querySelector("span");
+            span.innerHTML = obj.value;
+        }
+    </script>
+</body>
+
+</html>

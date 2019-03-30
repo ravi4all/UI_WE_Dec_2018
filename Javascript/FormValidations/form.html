@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="validations.js"></script>
+    <style>
+        #progress {
+            height: 20px;
+            /* width: 50px; */
+            display: inline-block;
+            transition: 1s;
+            /* background-color: red; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Form</h1>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Name" id="box_1">
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="text" placeholder="Enter Email" id="box_2">
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" id="box_3">
+                </td>
+                <td>
+                    <span></span>
+                    <span id="progress"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" placeholder="Confirm Password">
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

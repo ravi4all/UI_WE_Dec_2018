@@ -1,0 +1,88 @@
+class Emp() {}
+VM1709:1 Uncaught SyntaxError: Unexpected token (
+x = 12;
+12
+typeof(x)
+"number"
+x instanceof Number
+false
+arr = [2,3,4,5,6]
+(5) [2, 3, 4, 5, 6]
+typeof(arr)
+"object"
+arr instanceof Array
+true
+arr instanceof Object
+true
+Array instanceof Object
+true
+typeof(Array)
+"function"
+typeof(Object)
+"function"
+function Emp(){
+}
+undefined
+var obj = new Emp()
+undefined
+obj
+Emp {}
+function Emp(id,name,sal,dept){
+	this.id = id;
+	this.name = name;
+	this.sal = sal;
+	this.dept = dept;
+}
+undefined
+var obj = new Emp(101,'Ram',25000,'IT');
+undefined
+var obj = new Emp(102,'Ramesh',55000,'IT');
+undefined
+var obj = new Emp(101,'Ram',25000,'IT');
+undefined
+var obj_1 = new Emp(102,'Ramesh',55000,'IT');
+undefined
+obj
+Emp {id: 101, name: "Ram", sal: 25000, dept: "IT"}
+obj_1
+Emp {id: 102, name: "Ramesh", sal: 55000, dept: "IT"}
+obj_1.name
+"Ramesh"
+obj.address = 'Pune'
+"Pune"
+obj_1.address = 'Dlehi'
+"Dlehi"
+obj_1.address = 'Delhi'
+"Delhi"
+obj
+Emp {id: 101, name: "Ram", sal: 25000, dept: "IT", address: "Pune"}
+obj_1
+Emp {id: 102, name: "Ramesh", sal: 55000, dept: "IT", address: "Delhi"}
+Emp.prototype.branch = 'Noida';
+"Noida"
+obj
+Emp {id: 101, name: "Ram", sal: 25000, dept: "IT", address: "Pune"}address: "Pune"dept: "IT"id: 101name: "Ram"sal: 25000__proto__: branch: "Noida"constructor: ƒ Emp(id,name,sal,dept)__proto__: Object
+obj.branch
+"Noida"
+var user = {
+	name : 'Ram',
+	sal  : 35000,
+	dept : 'IT',
+	bio : function(){
+		console.log(this.name, this.sal, this.dept);
+	}
+}
+undefined
+user
+{name: "Ram", sal: 35000, dept: "IT", bio: ƒ}
+user.bio()
+VM2461:6 Ram 35000 IT
+undefined
+Number
+ƒ Number() { [native code] }
+Number instanceof Object
+true
+String
+ƒ String() { [native code] }
+x = new String("Hello");
+String {"Hello"}

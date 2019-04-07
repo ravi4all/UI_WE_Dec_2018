@@ -1,10 +1,12 @@
 window.addEventListener("load", initEvents);
 
 var audio;
+var playState = false;
 
 function initEvents() {
     var ul = document.querySelector("#songList");
     audio = document.querySelector("#audio");
+    document.querySelector("#play").addEventListener("click", pauseSong);
     allSongs.forEach(function(obj) {
         var li = document.createElement("li");
         li.setAttribute("title", obj.song_id);
@@ -28,8 +30,29 @@ function playSong() {
     for (var i = 0; i < allSongs.length; i++) {
         if (allSongs[i].song_id == songId) {
             var songUrl = allSongs[i].song_url;
+            var songName = allSongs[i].song_name;
         }
     }
     audio.src = songUrl;
+    playState = true;
     audio.play();
+    togglePlay(playState);
+    document.querySelector("#curr_song").innerHTML = songName;
+}
+
+function togglePlay(playState) {
+    console.log(playState);
+    var playIcon = document.querySelector("#play");
+    if (playState == true) {
+        playIcon.innerHTML = '<i class="fas fa-pause"></i>';
+        audio.play();
+    } else {
+        playIcon.innerHTML = '<i class="fas fa-play"></i>';
+        audio.pause();
+    }
+}
+
+function pauseSong() {
+    playState = !playState;
+    togglePlay(playState);
 }

@@ -1,3 +1,9 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
 .all_songs {
     height: 70%;
     width: 65%;
@@ -6,23 +12,53 @@
     overflow-y: scroll;
 }
 
+.playListWrapper {
+    overflow-y: scroll;
+    position: fixed;
+    height: 70%;
+    width: 24%;
+}
+
+.playListWrapper::-webkit-scrollbar,
 .all_songs::-webkit-scrollbar {
     width: 8px;
     background-color: lightslategray;
 }
 
+.playListWrapper::-webkit-scrollbar-thumb,
 .all_songs::-webkit-scrollbar-thumb {
     background-color: red;
 }
 
 #musicPlayer {
     position: fixed;
+    padding: 10px 0px;
     bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
+}
+
+#musicPlayer h5 {
+    color: #fff;
+}
+
+#musicPlayer i {
+    font-size: 20px;
 }
 
 #musicPlayer audio {
     width: 100%;
+    display: none;
+}
+
+#slider input {
+    width: 80%;
+    vertical-align: middle;
+}
+
+#slider span {
+    color: #fff;
+    font-size: 20px;
 }
 
 #songList {
@@ -40,7 +76,77 @@
     margin: 0px 10px 20px;
 }
 
+#songList li span {
+    display: block;
+    height: 50px;
+}
+
 #songList li img {
     width: 100%;
     height: 200px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+#playList li {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+#playList li img {
+    width: 20%;
+    height: 50px;
+}
+
+#playList li span {
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+#playList li button {
+    width: 50%;
+    padding: 0px 0px;
+    height: 34px;
+    margin-top: 5px;
+    display: block;
 }

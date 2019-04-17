@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <input type="text" placeholder="Enter Something here...">
+    <button onclick="startCalling()">Click Me</button>
+
+    <script>
+        function startCalling() {
+            one();
+            two();
+            three();
+            four();
+            five();
+            six();
+        }
+
+        function one() {
+            console.log("Function 1 Executed...");
+        }
+
+        function two() {
+            // for (var i = 0; i <= 100000; i++) {
+            //     for (var j = 0; j <= 100000; j++) {
+            //         var k = i + j;
+            //     }
+            // }
+            console.log("Starting AJAX...");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                // console.log(this.readyState, this.status);
+                if (this.readyState == 4 && this.status == 200) {
+                    for (var i = 0; i <= 100000; i++) {
+                        for (var j = 0; j <= 100000; j++) {
+                            var k = i + j;
+                        }
+                    }
+                    console.log("Iteration Completed...");
+                    console.log("Function 2 Executed...");
+                }
+            }
+            xhttp.open('get', '');
+            xhttp.send();
+        }
+
+        function three() {
+            console.log("Function 3 Executed...");
+        }
+
+        function four() {
+            console.log("Function 4 Executed...");
+        }
+
+        function five() {
+            console.log("Function 5 Executed...");
+        }
+
+        function six() {
+            console.log("Function 6 Executed...");
+        }
+    </script>
+</body>
+
+</html>
